@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../css/mainstyles.css">
+    <title>Registracija</title>
+</head>
+
+<body>
+
+    <div class="container main_container" id="main_container">
+
+        <div class="row justify-content-center">
+            <h2>REGISTRACIJOS FORMA</h2>
+        </div>
+
+        <form id="form_section">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">VARDAS</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Vardas">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPhone">TELEFONAS</label>
+                    <input type="tel" class="form-control" id="customerPhone" placeholder="Telefonas">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="startDate">DATA</label>
+                    <input type="date" class="form-control" id="startDate">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="endDate">TERMINAS</label>
+                    <input type="date" class="form-control" id="endDate">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="inputBike">DVIRATIS</label>
+                    <input type="text" class="form-control" id="inputItem" placeholder="Dviratis">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputOrderTaker">KAS PRIEME?</label>
+                    <input class="form-control" id="inputOrderTaker"></input>
+                </div>
+            </div>
+            <h3>Darbai/detales/priedai:</h3>
+            <div class="form-group row">
+                <label for="PROFILAKTIKA" class="col-sm-2 col-form-label">PROFILAKTIKA</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="PROFILAKTIKA"><br>
+                </div>
+                <label for="PILNA_PROFILAKTIKA" class="col-sm-2 col-form-label">PILNA PROFILAKTIKA</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="PILNA_PROFILAKTIKA"><br>
+                </div>
+                <label for="PAVARU_REGULIAVIMAS" class="col-sm-2 col-form-label">PAVARU REGULIAVIMAS</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="PAVARU_REGULIAVIMAS"><br>
+                </div>
+                <label for="STABDZIU_REGULIAVIMAS" class="col-sm-2 col-form-label">STABDZIU REGULIAVIMAS</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="STABDZIU_REGULIAVIMAS"><br>
+                </div>
+                <label for="RATU_TIESINIMAS" class="col-sm-2 col-form-label">RATU TIESINIMAS</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="RATU_TIESINIMAS"><br>
+                </div>
+                <label for="KAMEROS_KEITIMAS" class="col-sm-2 col-form-label">KAMEROS KEITIMAS</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="KAMEROS_KEITIMAS"><br>
+                </div>
+                <label for="KITA" class="col-sm-2 col-form-label">KITA</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="KITA"><br>
+                </div>
+
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto text-center">
+                    <div class="form-group">
+                        <h5>Įkelti dviračio nuotrauką:</h5>
+                        <input type="file" class="form-control-file" id="file_upload">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark" id="file_upload_btn">Upload image</button>
+                    </div>
+                    <img src="..." class="img-fluid" alt="Uploaded image" id="show_image">
+                </div>
+            </div>
+
+            <br>
+            <h3 class="text-center">Pasirinkti meistra:</h3>
+            <div class="row justify-content-center pb-3" id="output_container">
+                <div class="btn-group-toggle" data-toggle="buttons" id="output_button">
+                </div>
+            </div>
+
+        </form>
+        <div class="pb-5">
+            <button class="btn btn-primary btn-lg btn-block" id="create_order">REGISTRUOTI</button>
+            <button class="btn btn-secondary btn-lg btn-block" id="go_back">GRĮŽTI</button>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script src="main.js"></script>
+
+</html>

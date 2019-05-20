@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+.main_container{
+    height: 100vh;
+    background-color: #C2A26F;
+}
+#ponas_logo{
+    margin-top: 25px;
+}
+#registracija{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+#meistras{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}

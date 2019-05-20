@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Ponas Dviratis</title>
+</head>
+
+<body>
+
+    <div class="container main_container">
+        <div id="logo">
+            <img src="./img/simbolisuzrasas.png" class="img-fluid" alt="Ponas logo" id="ponas_logo">
+        </div>
+
+        <div class="row justify-content-center" id="registracija">
+            <button type="button" class="btn btn-primary btn-lg">REGISTRACIJA</button>
+        </div>
+
+        <div class="row justify-content-center" id="paieska">
+            <button type="button" class="btn btn-secondary btn-lg">PAIESKA</button>
+        </div>
+
+        <div class="row justify-content-center" id="meistras">
+            <button type="button" class="btn btn-secondary btn-lg">MEISTRAS</button>
+        </div>
+
+        <div class="row justify-content-center fixed-bottom" id="logout">
+            <button type="button" class="btn btn-warning btn-lg">LOGOUT</button>
+        </div>
+
+    </div>
+
+    <!-- Login modal -->
+
+    <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect to Ponas Dviratis</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="staff-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="staff-password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="login_user_button">Log In</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="login_forgot_password">Forgot password?</button>
+                    <button type="button" class="btn btn-info" id="login_create_user">Create User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create user modal -->
+
+    <div class="modal fade" id="create_user_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create new staff member</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="create_staff-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="create_staff-password">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="staff-email">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="create_user">Create user</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="create_user_back">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal popup-->
+    <div class="modal fade" id="staff_user_exists" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">User with this name or email already exists</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="staff_user_exists_close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
